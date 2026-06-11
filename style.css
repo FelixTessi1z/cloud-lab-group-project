@@ -323,6 +323,58 @@ h1 {
     text-align: center;
 }
 
+.countdown-card {
+    text-align: center;
+}
+
+#meetingCountdown {
+    color: #1e3c72;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.filter-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 12px 0 14px;
+}
+
+.filter-btn,
+.copy-btn {
+    background: white;
+    border: 1px solid #2a5298;
+    border-radius: 25px;
+    color: #1e3c72;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 9px 16px;
+    transition: all 0.25s ease;
+}
+
+.filter-btn:hover,
+.copy-btn:hover,
+.filter-btn.active-filter {
+    background: #1e3c72;
+    color: white;
+}
+
+.copy-btn {
+    display: inline-block;
+    margin: 6px 8px 6px 0;
+}
+
+.contact-status {
+    color: #1e3c72;
+    display: none;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+.contact-status.show {
+    display: block;
+}
+
 @media (max-width: 768px) {
     nav a {
         padding: 8px 16px;

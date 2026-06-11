@@ -88,10 +88,15 @@
             <div class="two-columns">
                 <div class="info-card">
                     <h3>📅 Upcoming Events</h3>
+                    <div class="filter-controls">
+                        <button class="filter-btn active-filter" type="button" data-filter="all">All</button>
+                        <button class="filter-btn" type="button" data-filter="workshop">Workshops</button>
+                        <button class="filter-btn" type="button" data-filter="competition">Competitions</button>
+                    </div>
                     <ul>
-                        <li>April 10: AI Workshop</li>
-                        <li>April 20: Git & GitHub Bootcamp</li>
-                        <li>May 5: Annual Hackathon</li>
+                        <li data-event-type="workshop">April 10: AI Workshop</li>
+                        <li data-event-type="workshop">April 20: Git & GitHub Bootcamp</li>
+                        <li data-event-type="competition">May 5: Annual Hackathon</li>
                     </ul>
                 </div>
                 <div class="info-card">
@@ -109,5 +114,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js" defer></script>
 </body>
 </html>
